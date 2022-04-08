@@ -9,6 +9,8 @@ import SwiftUI
 
 struct TaskCell: View {
     
+    @Environment(\.managedObjectContext) var moc
+    
     var task: Task
     
     var body: some View {
@@ -26,7 +28,14 @@ struct TaskCell: View {
                 Text(task.address!)
             }
             Spacer()
+            HStack(spacing: 10){
             Text(task.gender!).foregroundColor(.red)
+            Button(action: {
+                moc.delete(task)
+            }, label: {
+                Image(systemName: "trash")
+            })
+            }
         }.padding(.top,10).padding(.bottom,10)
     }
 }
