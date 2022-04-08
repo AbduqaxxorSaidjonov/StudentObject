@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76B4CF362800ABA00025CBB3 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B4CF352800ABA00025CBB3 /* DetailScreen.swift */; };
 		76C5B2272800A415005D8FA5 /* StudentObjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C5B2262800A415005D8FA5 /* StudentObjectApp.swift */; };
-		76C5B2292800A415005D8FA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C5B2282800A415005D8FA5 /* ContentView.swift */; };
 		76C5B22B2800A416005D8FA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76C5B22A2800A416005D8FA5 /* Assets.xcassets */; };
 		76C5B22E2800A416005D8FA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76C5B22D2800A416005D8FA5 /* Preview Assets.xcassets */; };
 		76C5B2302800A416005D8FA5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C5B22F2800A416005D8FA5 /* Persistence.swift */; };
@@ -16,6 +16,8 @@
 		76C5B23D2800A416005D8FA5 /* StudentObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C5B23C2800A416005D8FA5 /* StudentObjectTests.swift */; };
 		76C5B2472800A416005D8FA5 /* StudentObjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C5B2462800A416005D8FA5 /* StudentObjectUITests.swift */; };
 		76C5B2492800A416005D8FA5 /* StudentObjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C5B2482800A416005D8FA5 /* StudentObjectUITestsLaunchTests.swift */; };
+		76C5B2582800A45C005D8FA5 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C5B2572800A45C005D8FA5 /* MainScreen.swift */; };
+		76C5B25E2800A6EB005D8FA5 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C5B25D2800A6EB005D8FA5 /* TaskCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		76B4CF352800ABA00025CBB3 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
 		76C5B2232800A415005D8FA5 /* StudentObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentObject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C5B2262800A415005D8FA5 /* StudentObjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentObjectApp.swift; sourceTree = "<group>"; };
-		76C5B2282800A415005D8FA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		76C5B22A2800A416005D8FA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76C5B22D2800A416005D8FA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76C5B22F2800A416005D8FA5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +50,8 @@
 		76C5B2422800A416005D8FA5 /* StudentObjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudentObjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C5B2462800A416005D8FA5 /* StudentObjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentObjectUITests.swift; sourceTree = "<group>"; };
 		76C5B2482800A416005D8FA5 /* StudentObjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentObjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		76C5B2572800A45C005D8FA5 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		76C5B25D2800A6EB005D8FA5 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,10 @@
 		76C5B2252800A415005D8FA5 /* StudentObject */ = {
 			isa = PBXGroup;
 			children = (
+				76C5B2592800A520005D8FA5 /* cells */,
+				76C5B2562800A44A005D8FA5 /* screens */,
+				76C5B2552800A422005D8FA5 /* apputils */,
 				76C5B2262800A415005D8FA5 /* StudentObjectApp.swift */,
-				76C5B2282800A415005D8FA5 /* ContentView.swift */,
-				76C5B22A2800A416005D8FA5 /* Assets.xcassets */,
-				76C5B22F2800A416005D8FA5 /* Persistence.swift */,
-				76C5B2312800A416005D8FA5 /* StudentObject.xcdatamodeld */,
 				76C5B22C2800A416005D8FA5 /* Preview Content */,
 			);
 			path = StudentObject;
@@ -131,6 +134,33 @@
 				76C5B2482800A416005D8FA5 /* StudentObjectUITestsLaunchTests.swift */,
 			);
 			path = StudentObjectUITests;
+			sourceTree = "<group>";
+		};
+		76C5B2552800A422005D8FA5 /* apputils */ = {
+			isa = PBXGroup;
+			children = (
+				76C5B22F2800A416005D8FA5 /* Persistence.swift */,
+				76C5B22A2800A416005D8FA5 /* Assets.xcassets */,
+				76C5B2312800A416005D8FA5 /* StudentObject.xcdatamodeld */,
+			);
+			path = apputils;
+			sourceTree = "<group>";
+		};
+		76C5B2562800A44A005D8FA5 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				76C5B2572800A45C005D8FA5 /* MainScreen.swift */,
+				76B4CF352800ABA00025CBB3 /* DetailScreen.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		76C5B2592800A520005D8FA5 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				76C5B25D2800A6EB005D8FA5 /* TaskCell.swift */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C5B2582800A45C005D8FA5 /* MainScreen.swift in Sources */,
 				76C5B2332800A416005D8FA5 /* StudentObject.xcdatamodeld in Sources */,
+				76B4CF362800ABA00025CBB3 /* DetailScreen.swift in Sources */,
 				76C5B2302800A416005D8FA5 /* Persistence.swift in Sources */,
-				76C5B2292800A415005D8FA5 /* ContentView.swift in Sources */,
 				76C5B2272800A415005D8FA5 /* StudentObjectApp.swift in Sources */,
+				76C5B25E2800A6EB005D8FA5 /* TaskCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
